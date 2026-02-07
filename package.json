@@ -1,0 +1,40 @@
+{
+  "name": "cdp-stealth",
+  "version": "0.1.0",
+  "description": "Human-like browser automation via Chrome DevTools Protocol. Bypasses PerimeterX, Cloudflare, and other bot detection.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cdp",
+    "chrome",
+    "automation",
+    "stealth",
+    "bot-detection",
+    "perimeter-x",
+    "cloudflare",
+    "puppeteer-alternative"
+  ],
+  "author": "Raccoon Labs <hello@raccoonlabs.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kennyklee/cdp-stealth"
+  },
+  "dependencies": {
+    "chrome-remote-interface": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.32",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
